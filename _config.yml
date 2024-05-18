@@ -1,3 +1,97 @@
-theme: jekyll-theme-minimal
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+# Site settings
+title: My Awesome Website Let's Go
+description: > # this means to ignore newlines until "baseurl:"
+  Welcome to my personal website where I share my projects, ideas, and more.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://Kruju.github.io" # the base hostname & protocol for your site
+
+# Author settings
+author:
+  name: Thomas
+  email: Notsharingmyemailatall@gmail.com
+  bio: "Economist, AI Enthusiast#notfully e/acc, and tech enthusiast."
+  avatar: "/assets/images/avatar.jpg" # path to your avatar image
+
+# Social media settings
+social:
+  twitter: yourusername
+  github: yourusername
+  linkedin: yourusername
+  facebook: yourusername
+  instagram: yourusername
+
+# Google Analytics
+google_analytics: UA-XXXXXXXX-X
+
+# Disqus
+disqus_shortname: yourdisqusshortname
+
+# Theme settings
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-archives
+
+# Pagination settings
+paginate: 5
+paginate_path: "/page:num/"
+
+# SEO and Sitemap settings
+jekyll-seo-tag:
+  title: "My Awesome Website"
+  description: "Welcome to my personal website where I share my projects, blogs, and more."
+  author: "John Doe"
+  twitter:
+    username: yourusername
+  social:
+    - name: GitHub
+      url: "https://github.com/yourusername"
+    - name: LinkedIn
+      url: "https://www.linkedin.com/in/yourusername/"
+    - name: Twitter
+      url: "https://twitter.com/yourusername"
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Permalinks
+permalink: /:year/:month/:day/:title/
+
+# Default settings for collections
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "John Doe"
+
+# Build settings
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+future: true
+lsi: false
+incremental: false
+
+# Output configuration
+encoding: "utf-8"
+timezone: "UTC"
